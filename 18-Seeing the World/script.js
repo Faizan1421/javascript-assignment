@@ -8,16 +8,16 @@ console.log(locations);
 
 // Print your array in alphabetical order without modifying the actual list.
 let sortedLocations = locations.slice().sort();
+console.log(sortedLocations);
 
 // Show that your array is still in its original order by printing it.
 console.log(locations);
 
 // Print your array in reverse alphabetical order without changing the order of the original list.
 let reversedSortedLocations = sortedLocations.map((item, i, coll) => {
-  return coll[coll.length - i - 1] + " ";
+  return coll[coll.length - i - 1];
 });
 console.log(reversedSortedLocations);
-console.log(sortedLocations);
 
 // Show that your array is still in its original order by printing it again.
 console.log(locations);

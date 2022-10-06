@@ -27,13 +27,5 @@ let myName1 = "         Faizan \n       \n  Tayyab    \t Hussain     ";
 
 let finalMyName2 = myName1.replace(/\s+/g, " ");
 
-let item1 = document.createElement("h4");
-let item2 = document.createElement("h4");
-
-item1.innerText = myName1;
-item2.innerText = finalMyName2;
-
-document.body.appendChild(item1);
-document.body.appendChild(item2);
 console.log(myName1);
 console.log(finalMyName2);

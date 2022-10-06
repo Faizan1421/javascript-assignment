@@ -3,6 +3,7 @@
 let favorite_fruits = ["mango", "strawberry", "grapes"];
 
 // Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
+
 if (favorite_fruits.includes("mango")) {
   console.log("i really like mango");
 }
@@ -18,3 +19,11 @@ if (favorite_fruits.includes("apple")) {
 if (favorite_fruits.includes("watermellon")) {
   console.log("i really like watermellon");
 }
+////////////////////////////////////////////
+//////////////////////////////////////
+// My favourite Method 2
+let random_fruits = ["mango", "banana", "pear", "strawberry"];
+
+favorite_fruits.forEach((item) => {
+  random_fruits.includes(item) && console.log(`I really like ${item}`);
+});

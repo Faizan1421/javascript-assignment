@@ -43,3 +43,37 @@ let suzukiMehran1 = carInfo1("Suzuki", "Mehran", (color = null), (year = 2018));
 console.log(hondaAccord1);
 console.log(toyotaAltis1);
 console.log(suzukiMehran1);
+////////////////////////////////////////
+///////////////////////////////////////
+// Method 3
+function carInfo3(manufacturer, model, ...optional) {
+  let makeCar = {
+    manufacturer,
+    model,
+  };
+  optional.forEach((list) => {
+    makeCar = { ...makeCar, ...list };
+  });
+  // You can use for loop also as this way
+  // for (let i = 0; i < optional.length; i++) {
+  //   makeCar = { ...makeCar, ...optional[i] };
+  // }
+  return makeCar;
+}
+
+let hondaAccord3 = carInfo3(
+  "honda",
+  "accord",
+  { color: "white" },
+  { year: 2022 }
+);
+let toyotaAltis3 = carInfo3(
+  "Toyota",
+  "Altis",
+  { color: "black" },
+  { year: 2022 }
+);
+let suzukiMehran3 = carInfo3("Suzuki", "Mehran", { year: 2018 });
+console.log(hondaAccord3);
+console.log(toyotaAltis3);
+console.log(suzukiMehran3);

@@ -8,12 +8,7 @@ console.log(`${names[1]} is my Best friend`);
 console.log(`${names[2]} is my Best friend`);
 console.log(`${names[3]} is my Best friend`);
 
-// Method2 (Difficult One :) )
+// Method2 (Advanced)
 let newArray = names.map((friend) => `${friend} is my Best friend`);
 let newStrings = newArray.join(",\n");
 console.log(newStrings);
-
-let text = document.createElement("h4");
-
-text.innerText = newStrings;
-document.body.appendChild(text);

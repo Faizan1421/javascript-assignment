@@ -26,15 +26,3 @@ let newInvitations = guests.map((item) => {
 });
 
 console.log(newInvitations.join("\n"));
-
-let text1 = document.createElement("h3");
-let text2 = document.createElement("h3");
-let text3 = document.createElement("h3");
-
-text1.innerText = newInvitations[0];
-text2.innerText = newInvitations[1];
-text3.innerText = newInvitations[2];
-
-document.body.appendChild(text1);
-document.body.appendChild(text2);
-document.body.appendChild(text3);

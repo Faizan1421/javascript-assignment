@@ -2,8 +2,3 @@
 
 let favNum = 8;
 console.log("My Favourite Number is " + favNum);
-
-let text = document.createElement("h4");
-
-text.innerText = `My Favourite Number is ${favNum}`;
-document.body.appendChild(text);

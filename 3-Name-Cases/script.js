@@ -16,16 +16,6 @@ let titleCaseName = myName
   .split(" ")
   .map((word) => word.replace(word[0], word[0].toUpperCase()))
   .join(" ");
-let items = [lowerCaseName, upperCaseName, titleCaseName];
-let ul = document.createElement("ul");
-
-items.map((item) => {
-  let li = document.createElement("li");
-  li.innerText = item;
-  ul.appendChild(li);
-});
-
-document.getElementById("title").appendChild(ul);
 
 /* Printing the values of the variables lowerCaseName, upperCaseName, and titleCaseName to the console. */
 console.log(lowerCaseName);

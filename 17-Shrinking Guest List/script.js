@@ -13,15 +13,6 @@ let invitations = guests.map((item) => {
 });
 console.log(invitations.join("\n"));
 
-let text1 = document.createElement("h3");
-let text2 = document.createElement("h3");
-
-text1.innerText = invitations[0];
-text2.innerText = invitations[1];
-
-document.body.appendChild(text1);
-document.body.appendChild(text2);
-
 // Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
 guests.pop();
 guests.pop();

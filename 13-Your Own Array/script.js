@@ -27,10 +27,3 @@ let result = favArray.map((item) => {
 only one item, then that item will be returned without using the separator. */
 let finalStrings = result.join(".\n");
 console.log(finalStrings);
-
-/* Creating a new element in the DOM and appending the finalStrings to it. */
-
-let text = document.createElement("h4");
-
-text.innerText = finalStrings;
-document.body.appendChild(text);
