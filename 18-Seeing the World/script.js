@@ -13,10 +13,11 @@ let sortedLocations = locations.slice().sort();
 console.log(sortedLocations);
 
 // Print your array in reverse alphabetical order without changing the order of the original list.
-let reversedSortedLocations = locations.map((item, i, coll) => {
+let reversedSortedLocations = sortedLocations.map((item, i, coll) => {
   return coll[coll.length - i - 1] + " ";
 });
 console.log(reversedSortedLocations);
+console.log(sortedLocations);
 
 // Show that your array is still in its original order by printing it again.
 console.log(locations);
