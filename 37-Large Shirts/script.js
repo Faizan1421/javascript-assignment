@@ -6,4 +6,5 @@ function make_shirt(size = "Large", text = "i love Javascript") {
   );
 }
 make_shirt();
-make_shirt("M", "I love python");
+make_shirt("M");
+make_shirt("Sm", "Never say Never");

@@ -2,7 +2,7 @@
 let list = ["Faizan", "Tayyab", "Zain", "Basit"];
 
 list[8] = "Majid";
-console.log(list);
+
 //  i created this Error by adding value in 8th index instead of 4th, this will create empty values in our array and total values/keys will be 5 in our object but it will show us total length of 9 values.and all empty spaces will be undefined
 
 ///////////Resolving this error////////////
